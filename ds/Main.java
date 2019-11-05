@@ -5,7 +5,8 @@
 
 public class Main {
     public static void main (String[] args) {
-        Arrays numbers = new Arrays(3); 
-        numbers.print();
+        Arrays intArray = new Arrays(3); 
+        intArray.insert(3);
+        intArray.print();
     }
 }
