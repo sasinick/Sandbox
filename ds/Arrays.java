@@ -16,21 +16,25 @@
 public class Arrays {
     
     private int[] items;
-    private int count=0;
+    private int count;
 
     public Arrays (int length) {
         items = new int[length];
     }
 
     public void insert(int item) {
-        if (items.count == counter) {
-            int[] newItems = new int[counter * 2];
-            newItems = items;
+        if (items.length == count) {
+            int[] newItems = new int[count * 2];
+            
+            for (int i=0; i < count; i++) 
+                newItems[i] = items[i];
+            items = newItems;
         }
         items[count++] = item;
     }
 
     public void print() {
+        System.out.println("HACKING: " + items[2]);
         for (int i=0; i < count; i++) {
             System.out.println(items[i]);
         }
