@@ -23,6 +23,10 @@ public class Arrays {
     }
 
     public void insert(int item) {
+        if (items.count == counter) {
+            int[] newItems = new int[counter * 2];
+            newItems = items;
+        }
         items[count++] = item;
     }
 
