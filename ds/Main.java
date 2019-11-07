@@ -1,6 +1,5 @@
 /* v 0.1 @ 3/11/2019
-   DS Invoker 
-   
+   DS Invoker
 */
 
 public class Main {
