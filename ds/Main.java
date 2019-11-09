@@ -14,3 +14,12 @@ public class Main {
         intArray.print();
     }
 }
+
+/* 
+   = ??
+  *= All clean/local changes
+  += added to staging
+   >  after commit
+
+
+ */
