@@ -9,6 +9,13 @@
          i) If full, then create a new array of twice the counter
          ii) Stuff items array into new array and add the new data (for loop)
      b) If array not full, just insert at end
+   Step 3: Remove data (at index)
+     a) Check if index is valid and not exceeds current bounds
+     b) Removalw ill leave a void that needs to be filled by left shifting
+     c) This will cause the void to be at the last, play the decrement trick
+   Step 4: Searching (by index)
+     a) 
+     b) 
 */
 
 // Enhancement: this array accepts integer only, can make it generic
@@ -17,7 +24,6 @@ public class Arrays {
     
     private int[] items;
     private int count;
-
     public Arrays (int length) {
         items = new int[length];
     }
@@ -25,12 +31,20 @@ public class Arrays {
     public void insert(int item) {
         if (items.length == count) {
             int[] newItems = new int[count * 2];
-            
+
             for (int i=0; i < count; i++) 
                 newItems[i] = items[i];
             items = newItems;
         }
         items[count++] = item;
+    }
+
+    public void removeAt(int index) {
+        if (index < 0 || index >= count)
+            throw new IllegalArgumentException();
+        for (int i=index; i < count; i++)
+            items[i] = items[i+1];
+        count--;
     }
 
     public void print() {
