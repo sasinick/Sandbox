@@ -16,7 +16,7 @@
    Step 4: Searching (by index)
      a) If element exists, return the index, else return -1
      b) Run a for loop to search for element one-by-one. O(n)
-   Step 5: 
+   Step 5: EXECISES TO RETURN TO
      a) Return largest no. 
      b) Return common items with another array
      c) Reverse the contents
@@ -24,12 +24,14 @@
 */
 
 /* 
-    Enhancement: this array accepts integer only, can make it generic
-    Why moving away from Array:
-    Lookup by value: O(n)
-    Insert: O(n)
-    Delete: O(n)
-    When to use, when the number of elements to be inserted in known prior
+    1) Enhancement: this array accepts integer only, can make it generic
+    2) Why moving away from Array:
+        Lookup by value: O(n)
+        Insert: O(n)
+        Delete: O(n)
+    3) Whats the alternative: Use markers like and head and tail and move them around
+       runtime complexity for insertionwill go down to O(1) [ARRAYLIST]
+    4) When to use, when the number of elements to be inserted in known prior
 */
 
 
