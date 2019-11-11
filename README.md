@@ -1,5 +1,5 @@
 # sandboxing DS
-A) ARRAYS
+A) ARRAYS\
     1) Enhancement: Array accepts integer only, can make it generic  
     2) Why moving away from Array:  
         Lookup by value: O(n)  
