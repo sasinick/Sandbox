@@ -11,6 +11,7 @@ public class Main {
         intArray.insert(4);
         intArray.insert(5);
         intArray.removeAt(1);
+        System.out.println("Index of 5 is: " + intArray.indexOf(5));
         intArray.print();
     }
 }
