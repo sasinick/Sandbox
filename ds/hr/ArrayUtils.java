@@ -1,3 +1,7 @@
+/* @ 18/11/2019
+   not following Big-O
+*/
+
 package hr;
 
 public class ArrayUtils{
@@ -20,15 +24,8 @@ public class ArrayUtils{
         if (array.length == 0)
             throw new IllegalStateException();
         
-        // for(int i=array.length - 1; i >= 0; i--) {
-        //     reverseArray[counter--] = array[i];
-        //     System.out.println(reverseArray[i]);
-        // }  
-        
-        for(int i=0; i < array.length; i++) {
+        for(int i=0; i < array.length; i++) 
             reverseArray[i] = array[(array.length - 1) - i];
-            //System.out.println(reverseArray[i]);
-        }
 
         return reverseArray;
     }
