@@ -2,6 +2,8 @@
    DS Invoker
 */
 
+package arrays;
+
 public class Main {
     public static void main (String[] args) {
         Arrays intArray = new Arrays(3); 

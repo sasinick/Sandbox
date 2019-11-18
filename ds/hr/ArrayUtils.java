@@ -1,5 +1,7 @@
 /* @ 18/11/2019
-   not following Big-O
+   not following Big-
+   can also use a LIFO stack to implement same logic
+   i suppose java collections has a stack implementation
 */
 
 package hr;

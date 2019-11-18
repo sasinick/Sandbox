@@ -34,6 +34,7 @@
     4) When to use, when the number of elements to be inserted in known prior
 */
 
+package arrays;
 
 public class Arrays {
     
