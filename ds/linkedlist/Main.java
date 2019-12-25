@@ -1,4 +1,6 @@
 package linkedlist;
+import java.util.Arrays;
+
 
 public class Main{
 
@@ -9,7 +11,12 @@ public class Main{
         list.addLast(5);
         //list.addFirst(10);
         //list.addFirst(20);
-        list.removeFirst();
+        //list.removeLast();
+        //list.removeLast();
+        list.reverseList();
+        System.out.println("Size: " + list.size());
         System.out.println(list.contains(3));
+        int[] array = list.toArray();
+        System.out.println(Arrays.toString(array));
     }
 }
