@@ -157,9 +157,23 @@ public class LinkedList {
         first = previous;
     }
 
-    public Node kthNodeFromLast(int k) {
-        
-        return null;
+    // two pointers, move one till k-1th node
+    // start moving both till second pointer is nul
+    // the first pointer will hold the kth node value
+    public int kthNodeFromLast(int k) {
+        Node a = first;
+        Node b = first;
+
+        for(int i=0; i < k -1; i++) {
+            b = b.next;     // b is now k-1 distance apart
+            if (b == null)
+                throw new IllegalArgumentException();
+        }
+        while (b != last) {
+            a = a.next;
+            b = b.next;
+        }
+        return a.value;
     }
 
     // (5) refactoring
