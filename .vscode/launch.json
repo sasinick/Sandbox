@@ -4,6 +4,20 @@
             "type": "java",
             "name": "CodeLens (Launch) - Main",
             "request": "launch",
+            "mainClass": "stack.Main",
+            "projectName": "Sandbox_2a4b5750"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HourglassSum",
+            "request": "launch",
+            "mainClass": "hr.HourglassSum",
+            "projectName": "Sandbox_2a4b5750"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
             "mainClass": "linkedlist.Main",
             "projectName": "Sandbox_2a4b5750"
         },
